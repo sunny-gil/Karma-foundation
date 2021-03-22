@@ -1,19 +1,17 @@
-$(document).ready(function() {
- 
-   
 
-    $('.owl-carousel').owlCarousel({
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel({
     loop:true,
-    stagePadding: 50,
     margin:10,
-    nav: false,
+    autoplay:true,
+    nav:false,
     dots:false,
-    autoplay: true ,
-    autoplayTimeout: 3000,
-    // responsiveClass: true,
+    lazyLoad:true,
+    autoplayTimeout:3000,
+    center:true,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3
@@ -22,8 +20,7 @@ $(document).ready(function() {
             items:5
         }
     }
-    });
+})
 
-   
-  });
-  
+
+});
